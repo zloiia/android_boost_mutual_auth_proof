@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+    </qresource>
+    <qresource prefix="/cert">
+        <file>../client_certs/server.crt</file>
+        <file>../client_certs/dh512.pem</file>
+        <file>../client_certs/server.key</file>
+    </qresource>
+</RCC>
