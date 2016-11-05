@@ -16,13 +16,15 @@ cp client.key client.key.secure
 openssl rsa -in client.key.secure -out client.key
 
 rm -rf client/certs
+
 mkdir client/certs
 
-cp client.crt client/certs/
-cp client.key client/certs/
-cp ca.crt /client/certs/
+cp client.crt client/certs/client.crt
+cp client.key client/certs/client.key
+cp ca.crt client/certs/ca.crt
 
 rm -rf server/certs
-cp ca.key server/certs/
-cp ca.crt server/certs/
+mkdir server/certs
+cp ca.key server/certs/ca.key
+cp ca.crt server/certs/ca.crt
 
